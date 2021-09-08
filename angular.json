@@ -21,7 +21,7 @@
               "apps/booking-yacht/src/favicon.ico",
               "apps/booking-yacht/src/assets"
             ],
-            "styles": ["apps/booking-yacht/src/styles.scss"],
+            "styles": ["./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css", "apps/booking-yacht/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
