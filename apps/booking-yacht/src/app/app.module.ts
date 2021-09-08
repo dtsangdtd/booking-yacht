@@ -1,3 +1,4 @@
+import { HomePagesComponent } from './pages/home-pages/home-pages.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -15,14 +16,34 @@ import { ServicesComponent } from './pages/services/services.component';
 import { DestinationsComponent } from './pages/destinations/destinations.component';
 import { DestinationsDetailsComponent } from './pages/destinations/destinations-details/destinations-details.component';
 import { BookingNowComponent } from './pages/booking-now/booking-now.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MaterialModule } from './material/material.module';
 @NgModule({
-  declarations: [AppComponent, FooterComponent, HeaderComponent, PagesComponent, LoginComponent, RegisterComponent, GalleryComponent, AboutUsComponent, ServicesComponent, DestinationsComponent, DestinationsDetailsComponent, BookingNowComponent],
-  imports: [BrowserModule, AppRoutingModule,PagesRoutingModule],
+  declarations: [
+    AppComponent,
+    FooterComponent,
+    HeaderComponent,
+    HomePagesComponent,
+    PagesComponent,
+    LoginComponent,
+    RegisterComponent,
+    GalleryComponent,
+    AboutUsComponent,
+    ServicesComponent,
+    DestinationsComponent,
+    DestinationsDetailsComponent,
+    BookingNowComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    PagesRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [
-   
-  ],
+  exports: [],
 })
 export class AppModule {}
