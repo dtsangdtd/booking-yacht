@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  apiURL: 'https://swd391g5.azurewebsites.net/api/member',
 };
 
 /*
