@@ -1,3 +1,6 @@
+import { PrimengModule } from './primeng/primeng/primeng.module';
+import { UsersService } from './services/users.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HomePagesComponent } from './pages/home-pages/home-pages.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -40,7 +43,9 @@ import { MaterialModule } from './material/material.module';
     AppRoutingModule,
     PagesRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,
+    // MaterialModule,
+    PrimengModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
